@@ -28,7 +28,7 @@ no-slow-safety-checks = []
 [dependencies]
 gfx-hal = { path = "../../gfx/src/hal" }
 gfx-backend-empty = { path = "../../gfx/src/backend/empty", optional = true }
-gfx-backend-gl = { path = "../../gfx/src/backend/gl", features = ["glutin"], optional = true }
+gfx-backend-gl = { path = "../../gfx/src/backend/gl", features = ["glutin", "wgl"], default_features = false, optional = true }
 lazy_static = "1.0"
 log = "0.4"
 parking_lot = "0.9"
